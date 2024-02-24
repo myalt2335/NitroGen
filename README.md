@@ -16,4 +16,4 @@ The chances are like one in a quintillion anyways who cares if you leave this ru
 # Why is it so slow?
 I didn't fine tune how long it sleeps between each request yet so in order to not overload the API I added a wait I knew would be long enough to be safe. Maybe a new entry in the V2.1.X series will fine tune how long the script sleeps.
 
-Oh also it skips all of V1 because all of V1 is in development purgatory for being hot garbage. My first working version of the script was V2.1.0 which I replaced with V2.1.2 before I got the idea to make a github page. I then updated to V2.1.3 before I attempted to make a release.
+Oh also it skips all of V1 because all of V1 is in development purgatory for being garbage. My first working version of the script was V2.1.0 which I replaced with V2.1.2 before I got the idea to make a github page. I then made a release version of V2.1.2 making it the first full release version, but far from the first version of the script.
