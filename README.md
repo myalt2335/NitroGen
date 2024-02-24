@@ -1,12 +1,11 @@
 <p align="center">
   <img src="NitroGen.png" alt="NitroGen Logo" width="200"/>
 </p>
-# NitroGen
 
+# NitroGen
 Discord Nitro Generator - An open-source tool designed for educational purposes. This project is committed to transparency and ensuring users that it does not distribute viruses or send working codes to external servers.
 
 # Prerequisites
-
 Before using the script, make sure to install the required Python module by executing the following command in your terminal:
 pip install requests
 
