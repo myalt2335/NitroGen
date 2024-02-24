@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="your-logo.png" alt="NitroGen Logo" width="200"/>
+  <img src="NitroGen.png" alt="NitroGen Logo" width="200"/>
 </p>
 # NitroGen
 
