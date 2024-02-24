@@ -1,19 +1,27 @@
+<p align="center">
+  <img src="your-logo.png" alt="NitroGen Logo" width="200"/>
+</p>
 # NitroGen
-Discord Nitro Generator (Its open source I promise I'm not spoon feeding you a virus or sending working codes to my server)
 
-# If your going to use the raw files
-A module was used in this script that does not come with python. In order to use this script, you need to install the module requests. To do that, open a command prompt and type "pip install requests" without quotation marks.
+Discord Nitro Generator - An open-source tool designed for educational purposes. This project is committed to transparency and ensuring users that it does not distribute viruses or send working codes to external servers.
 
-# How to use?
-Run the script and paste your webhook url in then press enter and the script will then automatically send any valid codes to the webhook
+# Prerequisites
 
-# How do I get a webhook url?
-Here is a useful tutorial. https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks (I DIDN'T READ IT BUT THE PICTURES ARE VERY USEFUL SO IM PUTTING IT HERE)
+Before using the script, make sure to install the required Python module by executing the following command in your terminal:
+pip install requests
 
-# Why?
-The chances are like one in a quintillion anyways who cares if you leave this running in hopes you successfully get free nitro?
+# How to Use
+Run the script.
+Paste your Discord webhook URL.
+Press Enter, and the script will automatically send any valid codes to the webhook.
 
-# Why is it so slow?
-I didn't fine tune how long it sleeps between each request yet so in order to not overload the API I added a wait I knew would be long enough to be safe. Maybe a new entry in the V2.1.X series will fine tune how long the script sleeps.
+# Obtaining a Webhook URL
+If you don't have a webhook URL, follow this useful tutorial. Even though I haven't read it, the provided pictures seem helpful.
 
-Oh also it skips all of V1 because all of V1 is in development purgatory for being garbage. My first working version of the script was V2.1.0 which I replaced with V2.1.1 then V2.1.2 before I got the idea to make a github page. I then made an EXE version of V2.1.2 to release it as a github version making it the first full release version, but far from the first version of the script.
+# Purpose
+The probability of success is extremely low, so why not leave this running in the background and see if you get lucky with free Nitro?
+
+# Performance
+The script may seem slow because the sleep duration between requests is not fine-tuned. To prevent API overload, a safe wait time has been added. Future updates in the V2.1.X series might optimize this aspect.
+
+Note: V1 has been skipped as it was considered inadequate. The first working version was V2.1.0, later replaced by V2.1.1 and V2.1.2. The GitHub release is based on V2.1.2, serving as the first official release version.
