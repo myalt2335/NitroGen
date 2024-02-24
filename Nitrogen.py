@@ -4,10 +4,7 @@ import random
 import time
 from concurrent.futures import ThreadPoolExecutor
 
-
-version = "V2.1.1"
-
-discord_webhook_url = "PUT YOUR WEBHOOK URL HERE" # As the text says, replace it with the url to your webhook.
+version = "V2.1.2"
 
 def generate_random_string(length):
     characters = string.ascii_letters + string.digits
@@ -39,10 +36,14 @@ def generate_and_send():
 
 if __name__ == "__main__":
     log(f"Script started - {version}")
+
+
+    discord_webhook_url = input("Enter your Discord webhook URL: ")
+
     try:
         with ThreadPoolExecutor(max_workers=10) as executor:
             while True:
                 executor.submit(generate_and_send)
-                time.sleep(10)
+                time.sleep(10)  
     except KeyboardInterrupt:
         log("Script stopped by user")
