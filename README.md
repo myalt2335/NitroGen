@@ -15,7 +15,7 @@ Paste your Discord webhook URL.
 Press Enter, and the script will automatically send any valid codes to the webhook.
 
 # Obtaining a Webhook URL
-If you don't have a webhook URL, follow this useful tutorial. Even though I haven't read it, the provided pictures seem helpful.
+If you don't have a webhook URL, follow [this useful tutorial](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks). Even though I haven't read it, the provided pictures seem helpful.
 
 # Purpose
 The probability of success is extremely low, so why not leave this running in the background and see if you get lucky with free Nitro?
