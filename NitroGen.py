@@ -3,8 +3,9 @@ import string
 import random
 import time
 from concurrent.futures import ThreadPoolExecutor
+import re
 
-version = "V2.1.2"
+version = "V2.1.3"
 
 def generate_random_string(length):
     characters = string.ascii_letters + string.digits
@@ -34,11 +35,17 @@ def generate_and_send():
     generated_code = generate_random_string(18)
     send_request(generated_code)
 
+def is_valid_webhook(url):
+    return re.match(r'https://discord\.com/api/webhooks/\d+/.+', url) is not None
+
 if __name__ == "__main__":
     log(f"Script started - {version}")
 
-
     discord_webhook_url = input("Enter your Discord webhook URL: ")
+
+    while not is_valid_webhook(discord_webhook_url):
+        print("Invalid Discord webhook URL. Please enter a valid URL.")
+        discord_webhook_url = input("Enter your Discord webhook URL: ")
 
     try:
         with ThreadPoolExecutor(max_workers=10) as executor:
