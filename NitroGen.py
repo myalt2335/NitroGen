@@ -5,7 +5,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 import re
 
-version = "V2.1.4"
+version = "V2.1.5"
 
 def generate_random_string(length):
     characters = string.ascii_letters + string.digits
@@ -59,6 +59,6 @@ if __name__ == "__main__":
         with ThreadPoolExecutor(max_workers=10) as executor:
             while True:
                 executor.submit(generate_and_send)
-                time.sleep(10)
+                time.sleep(7)
     except KeyboardInterrupt:
         log("Script stopped by user")
