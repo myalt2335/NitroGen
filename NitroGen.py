@@ -5,7 +5,8 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 import re
 
-version = "V3.0.1"
+version = "V2.1.6"
+
 
 def generate_random_string(length):
     characters = string.ascii_letters + string.digits
