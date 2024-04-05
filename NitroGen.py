@@ -5,7 +5,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 import re
 
-version = "V3.0.0"
+version = "V3.0.1"
 
 def generate_random_string(length):
     characters = string.ascii_letters + string.digits
@@ -23,8 +23,16 @@ def send_request(code):
         else:
             print(f"Invalid code: {code}")
 
-    except requests.exceptions.RequestException:
-        print(f"Request failed for code {code}.")
+    except requests.exceptions.RequestException as e:
+        if isinstance(e, requests.exceptions.HTTPError):
+            if e.response.status_code == 429:
+                print(f"Rate limited. Waiting...")
+                time.sleep(10)  # You can adjust this if you want so it runs as fast as it can without ratelimiting
+                send_request(code)
+            else:
+                print(f"Request failed for code {code}. Code may be invalid.")
+        else:
+            print(f"Request failed for code {code}. Code may be invalid.")
 
 def send_to_discord_webhook(code):
     payload = {"content": f"New valid code: {code}"}
