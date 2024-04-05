@@ -61,6 +61,6 @@ if __name__ == "__main__":
         with ThreadPoolExecutor(max_workers=10) as executor:
             while True:
                 executor.submit(generate_and_send)
-                time.sleep(7)
+                time.sleep(7) # You gotta edit this one aswell lmao I don't know why I split it up in to two sleeps to serve the same purpose, too late to go back though.
     except KeyboardInterrupt:
         print("Script stopped by user")
